@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Notebook extends Equipamento {
+	private static final long serialVersionUID = 1L;
     private boolean carregaDadosSensiveis;
 
     public Notebook(String serial, String descricao, boolean ehNovo, double valorEstimado, boolean carregaDadosSensiveis) {

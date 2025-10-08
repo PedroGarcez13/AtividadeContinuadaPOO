@@ -1,6 +1,9 @@
 package br.edu.cs.poo.ac.ordem.entidades;
 
-public class Contato {
+import java.io.Serializable;
+
+public class Contato implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String email;
     private String celular;
     private boolean ehZap;

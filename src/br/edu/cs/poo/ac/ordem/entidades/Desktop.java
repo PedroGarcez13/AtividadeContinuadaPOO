@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Desktop extends Equipamento {
+	private static final long serialVersionUID = 1L;
     private boolean ehServidor;
 
     public Desktop(String serial, String descricao, boolean ehNovo, double valorEstimado, boolean ehServidor) {

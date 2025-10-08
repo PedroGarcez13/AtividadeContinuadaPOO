@@ -6,11 +6,13 @@ import java.time.format.DateTimeFormatter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @AllArgsConstructor
-public class OrdemServico {
+public class OrdemServico implements Serializable {
+	private static final long serialVersionUID = 1L;
     private Cliente cliente;
     private PrecoBase precoBase;
     private Notebook notebook;
